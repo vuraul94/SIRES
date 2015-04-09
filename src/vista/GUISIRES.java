@@ -41,7 +41,6 @@ public class GUISIRES extends javax.swing.JFrame {
         mnRegistro = new javax.swing.JMenu();
         mniEstudiante = new javax.swing.JMenuItem();
         mniCurso = new javax.swing.JMenuItem();
-        mniMatricula = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -71,9 +70,6 @@ public class GUISIRES extends javax.swing.JFrame {
             }
         });
         mnRegistro.add(mniCurso);
-
-        mniMatricula.setText("Matricula");
-        mnRegistro.add(mniMatricula);
 
         jMenuBar1.add(mnRegistro);
 
@@ -143,19 +139,18 @@ public class GUISIRES extends javax.swing.JFrame {
     private javax.swing.JMenu mnRegistro;
     private javax.swing.JMenuItem mniCurso;
     private javax.swing.JMenuItem mniEstudiante;
-    private javax.swing.JMenuItem mniMatricula;
     private javax.swing.JMenuItem mniSalir;
     // End of variables declaration//GEN-END:variables
 
     public static final String MENU_SALIR="Salir";
     public static final String MENU_ESTUDIANTE="Estudiante";
     public static final String MENU_CURSO="Curso";
-    public static final String MENU_MATRICULA="Matricula";
+    //public static final String MENU_MATRICULA="Matricula";
     
     public void escuchar(ActionListener control){
         this.mniEstudiante.addActionListener(control);
         this.mniCurso.addActionListener(control);
-        this.mniMatricula.addActionListener(control);
+       // this.mniMatricula.addActionListener(control);
         this.mniSalir.addActionListener(control);
     }
     
